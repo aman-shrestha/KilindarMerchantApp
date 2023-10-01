@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+
 import '../modules/buslist/bindings/buslist_binding.dart';
 import '../modules/buslist/views/buslist_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
@@ -8,7 +9,6 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
-
 import '../modules/organization/bindings/organization_binding.dart';
 import '../modules/organization/views/organization_view.dart';
 import '../modules/register/bindings/register_binding.dart';
@@ -66,5 +66,6 @@ class AppPages {
       page: () => DashboardView(),
       binding: DashboardBinding(),
     ),
+
   ];
 }
