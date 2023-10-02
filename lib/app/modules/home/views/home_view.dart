@@ -195,6 +195,9 @@ class HomeView extends GetView<HomeController> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    width: Dimension.width10 * 3.3,
+                  ),
                   Column(
                     children: [
                       Row(
@@ -217,6 +220,7 @@ class HomeView extends GetView<HomeController> {
                                         ? true
                                         : false,
                                   ),
+                                  
                                 ),
                               ),
                             ),

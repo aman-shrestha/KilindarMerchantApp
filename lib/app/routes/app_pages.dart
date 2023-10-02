@@ -1,8 +1,9 @@
 import 'package:get/get.dart';
 
-
 import '../modules/buslist/bindings/buslist_binding.dart';
 import '../modules/buslist/views/buslist_view.dart';
+import '../modules/counters/bindings/counters_binding.dart';
+import '../modules/counters/views/counters_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -66,6 +67,10 @@ class AppPages {
       page: () => DashboardView(),
       binding: DashboardBinding(),
     ),
-
+    GetPage(
+      name: _Paths.COUNTERS,
+      page: () => const CountersView(),
+      binding: CountersBinding(),
+    ),
   ];
 }

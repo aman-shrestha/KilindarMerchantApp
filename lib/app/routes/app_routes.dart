@@ -11,6 +11,7 @@ abstract class Routes {
   static const BUSLIST = _Paths.BUSLIST;
   static const SCAN = _Paths.SCAN;
   static const DASHBOARD = _Paths.DASHBOARD;
+  static const COUNTERS = _Paths.COUNTERS;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const BUSLIST = '/buslist';
   static const SCAN = '/scan';
   static const DASHBOARD = '/dashboard';
+  static const COUNTERS = '/counters';
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kilindar_merchant_app/app/constant/colors.dart';
 import 'package:kilindar_merchant_app/app/constant/styles.dart';
+import 'package:kilindar_merchant_app/app/modules/counters/views/counters_view.dart';
 
 import '../../buslist/views/buslist_view.dart';
 import '../../home/views/home_view.dart';
@@ -16,7 +17,8 @@ class DashboardView extends GetView<DashboardController> {
 
   static List<Widget> _widgetOptions = <Widget>[
     HomeView(),
-    OrganizationView(),
+    // OrganizationView(),
+    CountersView(),
     SearchView(),
     BuslistView(),
     ScanView(),
