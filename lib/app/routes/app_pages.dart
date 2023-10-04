@@ -10,6 +10,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/merchant/bindings/merchant_binding.dart';
+import '../modules/merchant/views/merchant_view.dart';
 import '../modules/organization/bindings/organization_binding.dart';
 import '../modules/organization/views/organization_view.dart';
 import '../modules/register/bindings/register_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.COUNTERS,
       page: () => const CountersView(),
       binding: CountersBinding(),
+    ),
+    GetPage(
+      name: _Paths.MERCHANT,
+      page: () => MerchantView(),
+      binding: MerchantBinding(),
     ),
   ];
 }

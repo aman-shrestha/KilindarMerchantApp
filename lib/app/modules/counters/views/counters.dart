@@ -48,7 +48,7 @@ class Counters extends StatelessWidget {
                           color: Colors.white,
                         ),
                         Text(
-                          "data",
+                          "Add Counter",
                           style: headingStyle2.copyWith(color: Colors.white),
                         ),
                       ],
@@ -59,7 +59,7 @@ class Counters extends StatelessWidget {
                   width: Dimension.width10 * 0.8,
                 ),
                 Container(
-                  width: Dimension.width10 * 5.2,
+                  width: Dimension.width10 * 5,
                   height: Dimension.hight10 * 5.2,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8.0),

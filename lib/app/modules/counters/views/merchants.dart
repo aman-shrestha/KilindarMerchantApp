@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:kilindar_merchant_app/app/modules/counters/views/counters.dart';
+import 'package:kilindar_merchant_app/app/modules/merchant/views/merchant_view.dart';
 
 import '../../../constant/colors.dart';
 import '../../../constant/dimension.dart';
@@ -100,10 +102,10 @@ class Merchants extends StatelessWidget {
 class AllowedMerchant extends StatelessWidget {
   AllowedMerchant({super.key});
   List title = [
-    "Om Shanti Counter",
-    "Om Shanti Counter",
-    "Om Shanti Counter",
-    "Om Shanti Counter",
+    "Om Shanti Counter 1",
+    "Om Shanti Counter 2",
+    "Om Shanti Counter 3",
+    "Om Shanti Counter 4",
   ];
 
   List subtitle = [
@@ -119,13 +121,19 @@ class AllowedMerchant extends StatelessWidget {
       height: Dimension.hight10 * 10,
       child: ListView.builder(
         itemCount: title.length,
-        itemBuilder: (BuildContext context, index) => CardReusable(
-            title: title[index],
-            subtitle: subtitle[index],
-            button1: "Block",
-            button2: "View details",
-            button1Icon: "assets/icons/block.svg",
-            button2Icon: "assets/icons/eye.svg"),
+        itemBuilder: (BuildContext context, index) => GestureDetector(
+          onTap: () {
+            Get.to(() => MerchantView(),
+                arguments: [title[index], subtitle[index]]);
+          },
+          child: CardReusable(
+              title: title[index],
+              subtitle: subtitle[index],
+              button1: "Block",
+              button2: "View details",
+              button1Icon: "assets/icons/block.svg",
+              button2Icon: "assets/icons/eye.svg"),
+        ),
       ),
     );
   }
